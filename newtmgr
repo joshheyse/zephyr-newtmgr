@@ -1,0 +1,4 @@
+#! /usr/bin/env bash
+
+pdir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+"$pdir/bin/newtmgr-$(uname | tr '[:upper:]' '[:lower:]')" "${@:1}"
